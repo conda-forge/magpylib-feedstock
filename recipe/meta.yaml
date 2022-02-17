@@ -1,5 +1,5 @@
 {% set name = "magpylib" %}
-{% set version = "3.0.2" %}
+{% set version = "3.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d4ca2a8eab5d106215154964663d012d4b63c85455351e8a1d241d11ea25bf7d 
+  sha256: f7b2730aa5fd2156e6fffcb1f977a8b5c8ffbab746bcf4ad19b108900847e260
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: AGPL-3.0-or-later
   license_family: AGPL
   license_file: LICENSE
-  summary: 'A simple, user friendly Python 3 toolbox for calculating magnetic fields from permanent magnets and current distributions.'
+  summary: A simple, user friendly Python 3 toolbox for calculating magnetic fields from permanent magnets and current distributions.
 
   description: |
     magpylib provides simple and easy to use classes for calculating magnetic
