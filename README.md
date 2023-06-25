@@ -1,11 +1,11 @@
-About magpylib
-==============
+About magpylib-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/magpylib-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/magpylib/magpylib
 
 Package license: AGPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/magpylib-feedstock/blob/main/LICENSE.txt)
 
 Summary: A simple, user friendly Python 3 toolbox for calculating magnetic fields from permanent magnets and current distributions.
 
