@@ -1,5 +1,5 @@
 {% set name = "magpylib" %}
-{% set version = "4.4.0" %}
+{% set version = "4.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1b0834f74ba381042dd4cf459e070cf466305bd14c5fa8bf01986d0e7a45ad48
+  sha256: 310d3ef51a50c09e6031ae14fd6213d96274efa42b0247acac898b3981f90125
 
 build:
   number: 0
