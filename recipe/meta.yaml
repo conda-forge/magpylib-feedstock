@@ -16,13 +16,15 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
+    - flit_core >=3.2,<4
   run:
-    - python >=3.7
+    - python >=3.8
     - matplotlib-base >=3.3
     - numpy >=1.20
-    - scipy >=1.6
+    - scipy >=1.7
+    - plotly >=5.3
 test:
   imports:
     - {{ name }}
