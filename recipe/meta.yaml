@@ -6,26 +6,28 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: be339e034fd72cb9792e95375fd2705c1c5c82e877eaafa280db80bc6851b6ef
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - flit-core >=3.2,<4
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - matplotlib-base >=3.3
     - numpy >=1.20
     - scipy >=1.7
     - plotly >=5.3
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - {{ name }}
 
