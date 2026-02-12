@@ -10,24 +10,26 @@ source:
   sha256: 2e46f6d4cd482e097c65ae973f26711f7d8a097346c6980d9a337c17f7fa0060
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - matplotlib-base >=3.3
     - numpy >=1.20
     - scipy >=1.7
     - plotly >=5.3
 test:
+  requires:
+    - python {{ python_min }}
   imports:
-    - {{ name }}
+    - magpylib
 
 about:
   home: http://github.com/magpylib/magpylib
