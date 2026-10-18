@@ -1,6 +1,5 @@
 {% set name = "magpylib" %}
 {% set version = "5.2.3" %}
-{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
