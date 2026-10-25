@@ -3,24 +3,21 @@ About magpylib-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/magpylib-feedstock/blob/main/LICENSE.txt)
 
-Home: http://github.com/magpylib/magpylib
+Home: https://github.com/magpylib/magpylib
 
-Package license: AGPL-3.0-or-later
+Package license: BSD-3-Clause
 
-Summary: A simple, user friendly Python 3 toolbox for calculating magnetic fields from permanent magnets and current distributions.
+Summary: Python package for computation of magnetic fields of magnets, currents and moments.
 
 Development: https://github.com/magpylib/magpylib
 
-Documentation: https://magpylib.readthedocs.io/en/latest/
+Documentation: https://magpylib.readthedocs.io/en/stable/
 
-magpylib provides simple and easy to use classes for calculating magnetic
-fields depending only on numpy and matplotlib. The core of the library is
-the source class which can represent permanent magnets, current
-distributions or magnetic moments in a 3D space. The library provides simple
-ways to generate such source objects, to manipulate them geometrically, to
-group several sources into a Collection system and to calculate the
-resulting fields of such systems. The systems may also be quickly visualized
-with a matplotlib based 3D plot method.
+Magpylib computes static magnetic fields of magnets, currents and other
+sources from analytical expressions, in vectorized form, and computes the
+forces and torques between them. Sources and sensors can be positioned,
+moved and rotated along paths, grouped into collections, and displayed with
+Matplotlib, Plotly or PyVista.
 
 
 Current build status
@@ -201,6 +198,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@Alexboiboi](https://github.com/Alexboiboi/)
 * [@OrtnerMichael](https://github.com/OrtnerMichael/)
 * [@lucasgcb](https://github.com/lucasgcb/)
 
