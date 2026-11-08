@@ -1,5 +1,5 @@
 {% set name = "magpylib" %}
-{% set version = "6.2.0" %}
+{% set version = "6.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e617fdf0ec5648391726a6848ae741aaab8a37357b9ae20e996ed4f8bf7d4f8c
+  sha256: b25f4cc71182477513c33774abbc4f1d78f44a6b7f0fef8f6ff8ee1bb09eb7f0
 
 build:
   number: 0
